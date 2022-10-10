@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/taxes.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>INPUT</h1>
+        
+    </header>
+
+    <main>
+        <div class="userForm">
+            <!-- P tag to show error -->
+                <p id="error"></p>
+                    
+                <!-- Form -->
+                <form id="form1">
+                    <h2>TAX CALCULATOR</h2>
+                      <label for="userName">Name* :</label>
+                      <input name="userName" id="userName" placeholder="Name please" />
+                      <br />
+                      <br />
+                      <label for="userPhone">Phone* :</label>
+                      <input name="userPhone" id="userPhone" placeholder="123-123-1234"/>
+                      <br />
+                      <br />
+
+                      <label for="userEmail">Email* :</label>
+                      <input name="userEmail" id="userEmail" />
+                      <br />
+                      <br />
+
+                      <label for="userEmpInc">Employement Income* :</label>
+                      <input name="userEmpInc" id="userEmpInc"/>
+                      <br/>
+                      <br/>
+
+                      <label for="userOtheInc">Other Income :</label>
+                      <input name="userOtheInc" id="userOtheInc"/>
+                      <br/>
+                      <br/>
+
+                      <label for="userIncTaxPaid">Income Taxes Paid* :</label>
+                      <input name="userIncTaxPaid" id="userIncTaxPaid"/>
+                      <br/>
+                      <br/>
+                                                
+                </form>
+                      <br />
+                      <button id="buttonStyle" onclick="Checkout()" ><b> <em>Calculate</em> </b> </button>
+
+                      
+         </div>
+
+         <h1>OUTPUT</h1>
+         <div class="outForm">
+            
+            <p id="checking">Result will be displayed here</p>
+         </div>
+    </main>
+</body>
+</html>
